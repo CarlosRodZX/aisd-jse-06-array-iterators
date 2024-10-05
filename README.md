@@ -161,7 +161,7 @@ In this project, you learned how to utilize the `.forEach()`, `.map()`, and `.so
 
 💾 **Not something to copy and paste** 💾
 
-**Note:** This lab references a solution file located [here](https://github.com/HackerUSA-CE/aisd-jse-04-array-adventures/tree/solution) (link not shown).
+**Note:** This lab references a solution file located [here](https://github.com/HackerUSA-CE/aisd-jse-06-array-iterators/tree/solution) (link not shown).
 
 
 
