@@ -24,3 +24,8 @@ console.log(hasLongTitle); // Expected output: false
 // Debugging common errors
 console.log("Movie Collection:", movieCollection);
 upperCaseMovies.forEach((movie) => console.log("Uppercase Movie:", movie));
+
+
+
+
+
