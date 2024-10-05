@@ -38,7 +38,11 @@ console.log(movieCollection); // Expected output: ["Inception", "Interstellar", 
 [ 'Inception', 'Interstellar', 'The Matrix', 'The Dark Knight' ]
 ```
 
-## 3. **Using .forEach() to Display Movies**
+**Explanation:**
+- The variable `movieCollection` holds an array containing four movie titles.
+- The `console.log()` function prints the array to the console, displaying the list of movies you have added.
+
+## 3. **Use .forEach() to Display Movies**
 Next, you will learn to display all movies in your array using the `.forEach()` method.
 
 - [ ] Update your `index.js` file with the following code:
@@ -60,7 +64,10 @@ The Matrix
 The Dark Knight
 ```
 
-## 4. **Creating a New Array with .map()**
+**Explanation:**
+- The `.forEach()` method executes the provided function once for each element in the array, allowing you to perform actions like logging each movie title to the console.
+
+## 4. **Create a New Array with .map()**
 Now, you will transform the movie titles into uppercase using the `.map()` method.
 
 - [ ] Add the following code to your `index.js`:
@@ -78,7 +85,10 @@ console.log(upperCaseMovies); // Expected output: ["INCEPTION", "INTERSTELLAR", 
 [ 'INCEPTION', 'INTERSTELLAR', 'THE MATRIX', 'THE DARK KNIGHT' ]
 ```
 
-## 5. **Checking for a Favorite Movie with .some()**
+**Explanation:**
+- The `.map()` method creates a new array populated with the results of calling a provided function on every element in the calling array. Here, it transforms each movie title to uppercase.
+
+## 5. **Check for a Favorite Movie with .some()**
 Next, you will check if your favorite movie is in the collection using the `.some()` method.
 
 - [ ] Update your `index.js` with the following code:
@@ -96,14 +106,18 @@ console.log(hasFavorite); // Expected output: true
 true
 ```
 
-## 6. **Combining Array Methods**
-Finally, you can combine these methods for a fun challenge. Check if any movie title is longer than 15 characters.
+**Explanation:**
+- The `.some()` method tests whether at least one element in the array passes the test implemented by the provided function. In this case, it checks if "Inception" is present in the movie collection.
+
+## 6. **Combine Array Methods**
+Finally, you can combine these methods for a fun challenge. Check if any movie title is longer than 15 characters after transforming the titles to include their lengths.
 
 - [ ] Add this code to your `index.js` file:
 
 ```javascript
-// Step 5: Using .some() to check for movie titles longer than 15 characters
-const hasLongTitle = movieCollection.some((movie) => movie.length > 15);
+// Step 5: Using .map() to create an array of movie title lengths, then using .some() to check for lengths greater than 15
+const titleLengths = movieCollection.map((movie) => movie.length);
+const hasLongTitle = titleLengths.some((length) => length > 15);
 console.log(hasLongTitle); // Expected output: false
 ```
 
@@ -114,13 +128,22 @@ console.log(hasLongTitle); // Expected output: false
 false
 ```
 
-## 7. **Debugging Common Errors**
+**Explanation:**
+- The first line uses `.map()` to create a new array, `titleLengths`, that contains the lengths of each movie title.
+- The `.some()` method is then applied to this new array to check whether any of the lengths exceed 15 characters. The result will be `false` since none of the titles do.
+
+
+## 7. **Debug Common Errors**
 To enhance your debugging skills, add `console.log()` statements at key points in your `index.js` to track changes:
 
 ```javascript
+// Step 6: Debugging common errors
 console.log("Movie Collection:", movieCollection);
 upperCaseMovies.forEach((movie) => console.log("Uppercase Movie:", movie));
 ```
+
+**Explanation:**
+- Logging the state of your array helps identify issues, such as incorrect values or unexpected results, enhancing your debugging skills.
 
 ## 8. **Test Your Knowledge**
 Consider creating an array of your favorite songs, adding and removing titles, checking for specific songs, and creating subarrays based on genres.
@@ -138,7 +161,7 @@ In this project, you learned how to utilize the `.forEach()`, `.map()`, and `.so
 
 💾 **Not something to copy and paste** 💾
 
-**Note:** This lab references a solution file located [here](https://github.com/HackerUSA-CE/aisd-jse-04-array-adventures/tree/solution) (link not shown).
+**Note:** This lab references a solution file located [here](https://github.com/HackerUSA-CE/aisd-jse-06-array-iterators/tree/solution) (link not shown).
 
 
 
