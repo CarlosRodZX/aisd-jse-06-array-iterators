@@ -54,7 +54,7 @@ movieCollection.forEach((movie) => {
 });
 ```
 
-- [ ] Run your JavaScript file to see the output.
+- [ ] Run your JavaScript file in the terminal with the command `node index.js` to see the output.
 
 **Expected Output:**
 ```
@@ -78,7 +78,7 @@ const upperCaseMovies = movieCollection.map((movie) => movie.toUpperCase());
 console.log(upperCaseMovies); // Expected output: ["INCEPTION", "INTERSTELLAR", "THE MATRIX", "THE DARK KNIGHT"]
 ```
 
-- [ ] Run your JavaScript file to see the new array.
+- [ ] Run your JavaScript file in the terminal with the command `node index.js` to see the output.
 
 **Expected Output:**
 ```
@@ -99,7 +99,7 @@ const hasFavorite = movieCollection.some((movie) => movie === "Inception");
 console.log(hasFavorite); // Expected output: true
 ```
 
-- [ ] Run your JavaScript file to see the result.
+- [ ] Run your JavaScript file in the terminal with the command `node index.js` to see the output.
 
 **Expected Output:**
 ```
@@ -121,7 +121,7 @@ const hasLongTitle = titleLengths.some((length) => length > 15);
 console.log(hasLongTitle); // Expected output: false
 ```
 
-- [ ] Run your JavaScript file to see the result.
+- [ ] Run your JavaScript file in the terminal with the command `node index.js` to see the output.
 
 **Expected Output:**
 ```
